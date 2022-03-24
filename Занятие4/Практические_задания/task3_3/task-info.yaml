@@ -15,7 +15,7 @@ files:
       offset: 65
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: return True if fruit_key in cart_dict else False
   text: |
     def is_exist_fruit(cart_dict: dict, fruit_key: str) -> bool:
@@ -41,6 +41,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true
