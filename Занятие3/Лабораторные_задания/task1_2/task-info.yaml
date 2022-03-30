@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 139
+    length: 100
     placeholder_text: '# TODO запишите здесь функцию factorial'
     initial_state:
       length: 39
@@ -19,8 +19,8 @@ files:
               result *= num
 
           return result
-  - offset: 258
-    length: 0
+  - offset: 134
+    length: 19
     placeholder_text: '# TODO распечатать результат выполнения функции factorial от
       числа 5'
     initial_state:
@@ -44,5 +44,5 @@ status: Unchecked
 feedback:
   message: Failed to launch checking. For more information, see <a href="https://plugins.jetbrains.com/plugin/10081-edutools/docs/troubleshooting-guide.html#failed_to_launch_checking">the
     Troubleshooting guide</a>
-  time: Thu, 24 Mar 2022 18:18:57 UTC
+  time: Wed, 30 Mar 2022 16:13:41 UTC
 record: -1

@@ -9,6 +9,6 @@ def add_func(a, b):
 
 
 if __name__ == "__main__":
-    result = ...  # TODO вызвать функцию add_func
+    result = add_func(1, 3)
 
     print(result)

@@ -3,15 +3,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 25
-    length: 67
+  - offset: 20
+    length: 255
     placeholder_text: '...  # TODO выберите нужный цикл, чтобы получать числа с клавиатуры'
     initial_state:
       length: 67
       offset: 25
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       numbers_list = []
           while True:
@@ -34,6 +34,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true

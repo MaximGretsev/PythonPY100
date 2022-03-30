@@ -3,15 +3,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 132
-    length: 72
+  - offset: 166
+    length: 189
     placeholder_text: '# TODO  найти количество чисел сумма квадратов, которых не
       превышает 500'
     initial_state:
       length: 72
       offset: 132
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       while True:
@@ -40,4 +40,8 @@ files:
   visible: false
   learner_created: false
 status: Unchecked
+feedback:
+  message: Failed to launch checking. For more information, see <a href="https://plugins.jetbrains.com/plugin/10081-edutools/docs/troubleshooting-guide.html#failed_to_launch_checking">the
+    Troubleshooting guide</a>
+  time: Wed, 30 Mar 2022 17:41:32 UTC
 record: -1
