@@ -1,5 +1,5 @@
-def task(n, m):  # TODO указать аннотацию типов
-    ...  # TODO с помощью list comprehension отфильтровать знаечения
+def task(n: int, m: int) -> list:  # TODO указать аннотацию типов
+    return [i ** 2 for i in range(n, m + 1) if i % 2 == 1] # TODO с помощью list comprehension отфильтровать знаечения
 
 
 if __name__ == "__main__":

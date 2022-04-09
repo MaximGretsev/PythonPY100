@@ -3,14 +3,14 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 44
-    length: 37
+  - offset: 39
+    length: 82
     placeholder_text: '...  # TODO проверка совпадения строк'
     initial_state:
       length: 37
       offset: 44
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       if str1[:k] == str2[:k]:
@@ -33,5 +33,5 @@ status: Unchecked
 feedback:
   message: Failed to launch checking. For more information, see <a href="https://plugins.jetbrains.com/plugin/10081-edutools/docs/troubleshooting-guide.html#failed_to_launch_checking">the
     Troubleshooting guide</a>
-  time: Thu, 24 Mar 2022 18:19:06 UTC
+  time: Fri, 01 Apr 2022 16:36:35 UTC
 record: -1

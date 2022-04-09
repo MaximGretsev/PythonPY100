@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 64
-    length: 11
+    length: 78
     placeholder_text: '...  # TODO установить текущую сумму, которая будет с каждым
       годом уменьшаться'
     initial_state:
@@ -14,8 +14,8 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: start_money
-  - offset: 101
-    length: 104
+  - offset: 168
+    length: 39
     placeholder_text: '# TODO найти минимальное количество лет'
     initial_state:
       length: 39

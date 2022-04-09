@@ -1,7 +1,13 @@
 if __name__ == "__main__":
     list_ = [4, -1, 10, -1, 3, -3, -6, 8, 6, 9]
-    ...  # TODO получить два списка четных и нечетных чисел
+    new_list_even: list = [num for num in list_ if num % 2 == 0]
+    new_list_not_even: list = [num for num in list_ if num % 2 == 1]
 
-    ...  # TODO найти длины этих списков
+    len_even, len_not_even = len(new_list_even), len(new_list_not_even)
 
-    ...  # TODO распечатать каких чисел больше. Учтите, что длины могу быть равны
+    if len_not_even > len_even:
+        print("Нечетные ")
+    elif len_even > len_not_even:
+        print("Четные ")
+    else:
+        print("Адинакава")

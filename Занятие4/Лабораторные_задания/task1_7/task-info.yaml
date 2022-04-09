@@ -8,15 +8,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 80
-    length: 67
+  - offset: 130
+    length: 127
     placeholder_text: 'new_list = []  # TODO Заполните список с помощью list comprehension'
     initial_state:
       length: 67
       offset: 80
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       mean = sum(list_) / len(list_)  # среднее арифметическое
           new_list = [src_num - mean for src_num in list_]
@@ -31,5 +31,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 09 Apr 2022 11:29:41 UTC
 record: -1

@@ -3,8 +3,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 28
-    length: 154
+  - offset: 0
+    length: 59
     placeholder_text: '# TODO написать функцию для поиска необходимой суммы денег'
     initial_state:
       length: 58
@@ -20,8 +20,8 @@ files:
               spend *= 1 + increase
 
           return need_money
-  - offset: 216
-    length: 23
+  - offset: 93
+    length: 57
     placeholder_text: '...  # TODO вызвать функцию и проверить работоспособность'
     initial_state:
       length: 57

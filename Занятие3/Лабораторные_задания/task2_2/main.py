@@ -1,10 +1,12 @@
 def is_palindrome(str_: str):
-    ...  # TODO привести строку к единому регистру и избавиться от пробелов
-
-    if ...:  # TODO проверка палиндрома
+    lw_str = ''.join(str_.lower().split())  # TODO привести строку к единому регистру и избавиться от пробелов
+    print(lw_str)
+    if lw_str == lw_str[::-1]:  # TODO проверка палиндрома
         print("Строка палиндром")
+        print(lw_str)
     else:
         print("Строка не палиндром")
+        print(lw_str)
 
 
 if __name__ == "__main__":

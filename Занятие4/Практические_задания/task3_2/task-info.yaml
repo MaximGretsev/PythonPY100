@@ -3,15 +3,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 196
-    length: 35
+  - offset: 213
+    length: 65
     placeholder_text: '# TODO посчитать через метод values'
     initial_state:
       length: 35
       offset: 196
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: print(sum(cart.values()))
   text: |
     if __name__ == "__main__":
@@ -29,6 +29,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true

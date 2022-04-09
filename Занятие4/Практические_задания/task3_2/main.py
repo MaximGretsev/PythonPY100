@@ -7,5 +7,7 @@ if __name__ == "__main__":
 
     for fruit in cart:
         print(cart[fruit])  # получаем значение по ключу
-
-    # TODO посчитать через метод values
+    sum_: int = 0
+    for price in cart.values():
+        sum_ += price
+    print(sum_)

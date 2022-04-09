@@ -4,13 +4,13 @@ files:
   visible: true
   placeholders:
   - offset: 343
-    length: 14
+    length: 36
     placeholder_text: '...  # TODO вызвать функцию add_func'
     initial_state:
       length: 36
       offset: 343
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: add_func(5, 10)
   text: |

@@ -3,14 +3,14 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 63
-    length: 115
+  - offset: 42
+    length: 47
     placeholder_text: '...  # TODO найти список делителей числа number'
     initial_state:
       length: 47
       offset: 42
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Unchecked
     encrypted_possible_answer: |-
       list_divisors = []
@@ -31,8 +31,4 @@ files:
   visible: false
   learner_created: false
 status: Unchecked
-feedback:
-  message: Failed to launch checking. For more information, see <a href="https://plugins.jetbrains.com/plugin/10081-edutools/docs/troubleshooting-guide.html#failed_to_launch_checking">the
-    Troubleshooting guide</a>
-  time: Wed, 30 Mar 2022 16:41:35 UTC
 record: -1

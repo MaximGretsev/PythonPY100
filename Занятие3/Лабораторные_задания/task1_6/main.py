@@ -1,6 +1,7 @@
 months = 10
 procent = 0.03
 
+
 def life_money(spend):
     in_month = spend * procent
     salary_in_month = in_month + spend
