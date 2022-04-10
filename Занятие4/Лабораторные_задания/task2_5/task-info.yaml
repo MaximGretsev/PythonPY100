@@ -10,26 +10,26 @@ files:
   visible: true
   placeholders:
   - offset: 48
-    length: 53
+    length: 79
     placeholder_text: '...  # TODO проверить что число больше или равно нулю'
     initial_state:
       length: 53
       offset: 48
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       if num < 0:
               raise ValueError("Число должно быть неотрицательным")
-  - offset: 107
+  - offset: 130
     length: 49
     placeholder_text: '...  # TODO проверить является ли число палиндром'
     initial_state:
       length: 49
       offset: 107
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: return True if str(num) == str(num)[::-1] else False
   text: |
     def is_palindrome_number(num: int) -> bool:
@@ -45,5 +45,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 10 Apr 2022 09:20:14 UTC
 record: -1

@@ -12,77 +12,77 @@ files:
   visible: true
   placeholders:
   - offset: 51
-    length: 96
+    length: 105
     placeholder_text: '...  # TODO для начала нужно перевести текст в нижний регистр
       и не забыть что возвращается копия'
     initial_state:
       length: 96
       offset: 51
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: str_.lower()
-  - offset: 245
-    length: 86
+  - offset: 254
+    length: 97
     placeholder_text: '...:  # TODO с помощью метода строк isalpha будем проверять,
       является ли символ буквой'
     initial_state:
       length: 86
       offset: 245
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: 'char.isalpha():'
-  - offset: 347
-    length: 53
+  - offset: 367
+    length: 68
     placeholder_text: '...:  # TODOпроверяем есть ли уже символ среди ключей'
     initial_state:
       length: 53
       offset: 347
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: 'char in char_dict:'
-  - offset: 417
-    length: 51
+  - offset: 452
+    length: 68
     placeholder_text: '...  # TODO если есть, то увеличиваем значение на 1'
     initial_state:
       length: 51
       offset: 417
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: char_dict[char] += 1
-  - offset: 503
-    length: 62
+  - offset: 555
+    length: 78
     placeholder_text: '...  # TODO в противном случае создаем новый элемент в словаре'
     initial_state:
       length: 62
       offset: 503
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: char_dict[char] = 1
-  - offset: 653
-    length: 45
+  - offset: 721
+    length: 65
     placeholder_text: '...  # TODO найти сумму всех значений словаря'
     initial_state:
       length: 45
       offset: 653
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: sum(char_dict.values())
-  - offset: 711
-    length: 96
+  - offset: 799
+    length: 167
     placeholder_text: '...  # TODO с помощью dict comprehension возвращаем словарь
       с процентными соотношениями значений'
     initial_state:
       length: 96
       offset: 711
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '{char: round(value / total_count, 3) for char, value
       in char_dict.items()}'
   text: "def get_count_char(str_: str) -> dict:\n\n    str_ = ...  # TODO для нача\
@@ -103,5 +103,8 @@ files:
     \ их с помощью метода строк join. Приступим!!!!\n    \"\"\"\n    chars_counter\
     \ = get_count_char(main_str)\n    print(frequency_chars(chars_counter))\n"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 10 Apr 2022 09:29:19 UTC
 record: -1

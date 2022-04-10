@@ -1,5 +1,5 @@
 def task(num: int) -> bool:
-    ...  # TODO какая есть особенность, когда все цифры в числе одинаковые?
+    return True if str(num) == str(num)[::-1] else False
 
 
 if __name__ == "__main__":

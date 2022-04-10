@@ -1,8 +1,9 @@
 def is_palindrome_number(num: int) -> bool:
-    ...  # TODO проверить что число больше или равно нулю
+    if num < 0:
+        raise ValueError("Число должно быть неотрицательным")
 
-    ...  # TODO проверить является ли число палиндром
-
+    return True if str(num) == str(num)[::-1] else False
+    # Тут я украл решение из Peek Solutions потому что не понимаю Слайсов, блин
 
 if __name__ == "__main__":
     print(is_palindrome_number(1234))

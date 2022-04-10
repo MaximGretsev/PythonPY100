@@ -10,26 +10,26 @@ files:
   visible: true
   placeholders:
   - offset: 37
-    length: 67
+    length: 86
     placeholder_text: '...  # TODO не забыть проерить, что число дожно быть четырехзначное'
     initial_state:
       length: 67
       offset: 37
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       if len(str(num)) != 4:
               raise ValueError("Число не четырехзначное :( ")
-  - offset: 110
-    length: 42
+  - offset: 128
+    length: 84
     placeholder_text: '...  # TODO проверить кратность суммы цифр'
     initial_state:
       length: 42
       offset: 110
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       list_digits = [int(digit) for digit in str(num)]
           return True if sum(list_digits) % 7 == 0 else False
@@ -47,5 +47,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 10 Apr 2022 08:58:46 UTC
 record: -1

@@ -12,26 +12,26 @@ files:
   visible: true
   placeholders:
   - offset: 43
-    length: 44
+    length: 27
     placeholder_text: '...  # TODO проверить что число шестизначное'
     initial_state:
       length: 44
       offset: 43
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       if len(str(num)) != 6:
               raise ValueError("Число не шестизначное :(")
-  - offset: 93
-    length: 46
+  - offset: 75
+    length: 79
     placeholder_text: '...  # TODO проверить счастливое число или нет'
     initial_state:
       length: 46
       offset: 93
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       list_digits = [int(digit) for digit in str(num)]
           return True if sum(list_digits[:3]) == sum(list_digits[3:]) else False
@@ -51,5 +51,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 10 Apr 2022 09:54:03 UTC
 record: -1
