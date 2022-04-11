@@ -1,4 +1,4 @@
-from models import init_field, is_win, has_empty_cell
+from models import init_field, is_win, has_empty_cell, EMPTY_SYMBOL, is_empty_cell, SIZE_FIELD, set_cell
 
 FIRST_PLAYER = "X"
 SECOND_PLAYER = "O"
@@ -31,23 +31,48 @@ def main():
 
 
 def print_win_message(player_symbol: str) -> None:
-    ...
+    print(f"Выиграл игрок {player_symbol}!")
 
 
 def print_draw_message():
-    ...
+    print("Ничья, брат")
 
 
 def player_step(field, player_symbol: str):
-    ...
+    while True:
+        try:
+            coord = int(input("Введите номер ячейки для хода: "))
+        except ValueError:
+            print("Вы ввели не целое число :( ")
+            continue
+
+        if not 1 <= coord <= 9:
+            print("Введите число в диапазоне от 1 до 9")
+            continue
+
+        x = (coord - 1) // SIZE_FIELD
+        y = (coord - 1) % SIZE_FIELD
+        if not is_empty_cell(field, x, y):
+            print("Ячейка занята!")
+            continue
+
+        set_cell(field, row_index=x, col_index=y, player_symbol=player_symbol)
+        break
 
 
 def enemy_step(field, player_symbol: str):
-    player_step(player_symbol)
+    player_step(field, player_symbol)
 
 
 def print_field(field: list[list]) -> None:
-    ...
+    start_num = 1
+    for i in range(len(field)):
+        for j in range(len(field[i])):
+            print_symbol = start_num if field[i][j] == EMPTY_SYMBOL else field[i][j]
+            start_num += 1
+            print(print_symbol, "|",  end="\t")
+        print()
+    print("-" * 11)
 
 
 if __name__ == "__main__":
