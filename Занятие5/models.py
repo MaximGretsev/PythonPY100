@@ -1,3 +1,6 @@
+"""
+
+"""
 from conf import SIZE_FIELD, EMPTY_SYMBOL
 
 
@@ -21,6 +24,11 @@ def has_empty_cell(field: list[list]) -> bool:
 
 
 def is_win(field: list[list]) -> bool:
+    """
+
+    :param field:
+    :return:
+    """
     win_combinations = [
         [(0, 0), (0, 1), (0, 2)],
         [(1, 0), (1, 1), (1, 2)],
