@@ -1,7 +1,5 @@
 from models import init_field, is_win, has_empty_cell, EMPTY_SYMBOL, is_empty_cell, SIZE_FIELD, set_cell
-
-FIRST_PLAYER = "X"
-SECOND_PLAYER = "O"
+from conf import FIRST_PLAYER, SECOND_PLAYER
 
 
 def main():
