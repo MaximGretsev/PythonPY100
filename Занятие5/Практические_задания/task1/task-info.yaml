@@ -11,24 +11,24 @@ files:
   visible: true
   placeholders:
   - offset: 170
-    length: 43
+    length: 68
     placeholder_text: '...:  # TODO Как получить количество строк?'
     initial_state:
       length: 43
       offset: 170
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: 'range(len(matrix)):'
-  - offset: 239
-    length: 46
+  - offset: 264
+    length: 82
     placeholder_text: '...:  # TODO как получить количество столбцов?'
     initial_state:
       length: 46
       offset: 239
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: 'range(len(matrix[row_index])):'
   text: |
     if __name__ == "__main__":
@@ -47,6 +47,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  time: Mon, 11 Apr 2022 15:06:55 UTC
 record: -1
 post_submission_on_open: true
