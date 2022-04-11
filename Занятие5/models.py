@@ -29,6 +29,12 @@ def is_win(field: list[list]) -> bool:
     :param field:
     :return:
     """
+    # Динамическая штука проверки комбинации. Но вот как проверять диагонали?
+    win_comb_2 = [
+        [(i, j) for j in range(SIZE_FIELD)]
+        for i in range(SIZE_FIELD)
+    ]
+
     win_combinations = [
         [(0, 0), (0, 1), (0, 2)],
         [(1, 0), (1, 1), (1, 2)],
